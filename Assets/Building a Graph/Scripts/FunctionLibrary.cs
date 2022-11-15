@@ -6,11 +6,11 @@ public static class FunctionLibrary
     public delegate Vector3 Function(float u, float v, float t);
     public enum FunctionName
     {
-        Wave, MultiWave, Ripple, NormalSphere, VerticalBandsSphere,
-        HorizontalBandsSphere, TwistedSphere, Torus
+        Wave, MultiWave, Ripple, NormalSphere,/*, VerticalBandsSphere,*/
+        /*HorizontalBandsSphere, TwistedSphere, */Torus
     }
-    static Function[] functions = { Wave, MultiWave, Ripple, NormalSphere,VerticalBandsSphere,
-    HorizontalBandsSphere,TwistedSphere,Torus};
+    static Function[] functions = { Wave, MultiWave, Ripple, NormalSphere,/*VerticalBandsSphere,*/
+    /*HorizontalBandsSphere,TwistedSphere,*/Torus};
     public static Function GetFunction(FunctionName name) => functions[(int)name];
     public static FunctionName GetNextFunctionName(FunctionName name)
     {
